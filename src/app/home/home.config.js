@@ -7,7 +7,7 @@ angular.module('ngDevstack.home')
         url: '/',
         views: {
             "main": {
-                controller: 'HomeCtrl',
+                controller: 'HomeController',
                 templateUrl: 'home/home.tpl.html'
             }
         },

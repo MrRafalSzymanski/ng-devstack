@@ -2,5 +2,5 @@
 
 angular.module('ngDevstack.about')
 
-.controller('AboutCtrl', function ($scope) {
+.controller('AboutController', function ($scope) {
 });

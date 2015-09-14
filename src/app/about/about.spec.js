@@ -10,10 +10,10 @@
 ngDescribe({
     name: 'about module',
     modules: ['ngDevstack', 'ngDevstack.about'],
-    controllers: 'AboutCtrl',
+    controllers: 'AboutController',
     tests: function (deps) {
         it('should load', function () {
-            expect(deps.AboutCtrl).toBeTruthy();
+            expect(deps.AboutController).toBeTruthy();
         });
     }
 });

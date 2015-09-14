@@ -2,5 +2,5 @@
 
 angular.module('ngDevstack.home')
 
-.controller('HomeCtrl', function ($scope) {
+.controller('HomeController', function ($scope) {
 });

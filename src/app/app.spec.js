@@ -3,7 +3,7 @@
 ngDescribe({
     name: 'is current url',
     modules: 'ngDevstack',
-    controllers: 'AppCtrl',
+    controllers: 'AppController',
     inject: ['$location'],
     tests: function (deps) {
         // should pass a dummy test
@@ -11,10 +11,10 @@ ngDescribe({
             expect(typeof deps.$location).toEqual('object');
         });
 
-        // deps.AppCtrl is the $scope object injected into AppCtrl
+        // deps.AppController is the $scope object injected into AppController
         it('is a scope for controller', function () {
-            expect(deps.AppCtrl).toBeTruthy();
-            expect(typeof deps.AppCtrl).toEqual('object');
+            expect(deps.AppController).toBeTruthy();
+            expect(typeof deps.AppController).toEqual('object');
         });
     }
 });

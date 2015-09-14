@@ -7,7 +7,7 @@ angular.module('ngDevstack.about')
         url: '/about/',
         views: {
             "main": {
-                controller: 'AboutCtrl',
+                controller: 'AboutController'
                 templateUrl: 'about/about.tpl.html'
             }
         },

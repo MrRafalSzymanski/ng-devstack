@@ -2,7 +2,7 @@
 
 angular.module('ngDevstack')
 
-.controller('AppCtrl', function ($rootScope, $scope) {
+.controller('AppController', function ($rootScope, $scope) {
 
     // handling UI Bootstrap Collapse plugin
     $scope.isCollapsed = true;

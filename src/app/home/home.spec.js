@@ -10,10 +10,10 @@
 ngDescribe({
     name: 'home module',
     modules: ['ngDevstack', 'ngDevstack.home'],
-    controllers: 'HomeCtrl',
+    controllers: 'HomeController',
     tests: function (deps) {
         it('should load', function () {
-            expect(deps.HomeCtrl).toBeTruthy();
+            expect(deps.HomeController).toBeTruthy();
         });
     }
 });
