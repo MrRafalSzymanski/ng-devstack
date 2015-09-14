@@ -8,7 +8,8 @@ var gulp     = require('gulp'),
     plugins  = require('gulp-load-plugins')(),
     bs       = require('browser-sync').create(),
     config   = require('./config.json'),
-    pkg      = require('./package.json');
+    pkg      = require('./package.json'),
+    eslint   = require('gulp-eslint');
 
 
 
@@ -135,9 +136,18 @@ gulp.task('scripts:cacheTpls', function () {
     return fnCacheTpls(config.paths.templates);
 });
 
-//Mocking working Linter until ESLint is properly configured
+// Check Javascript quality with ESLint
+var fnESLint = function(path) {
+    return gulp.src(path, { base: config.app })
+        .pipe(plugins.plumber())
+        .pipe(eslint())
+        .pipe(eslint.format())
+        .pipe(eslint.failOnError());
+};
+
+// Running ESLint with default ruleset
 gulp.task('scripts:lint', function () {
-    return true;
+    return fnESLint(config.paths.scripts);
 });
 
 

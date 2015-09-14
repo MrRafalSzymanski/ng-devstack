@@ -1,0 +1,19 @@
+{
+    "extends": "eslint:recommended",
+    "plugins": [
+        "angular"
+    ],
+    "globals": {
+        "angular": 1
+    },
+    "rules": {
+        "indent": [0,"tab"],
+        "quotes": [2,"single"],
+        "linebreak-style": [2,"unix"],
+        "semi": [2,"always"]
+    },
+    "env": {
+        "browser": true
+    }
+    //"extends": "angular"
+}
