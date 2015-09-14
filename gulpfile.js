@@ -142,7 +142,9 @@ var fnESLint = function(path) {
         .pipe(plugins.plumber())
         .pipe(eslint())
         .pipe(eslint.format())
-        .pipe(eslint.failOnError());
+        .pipe(eslint.failOnError())
+        .pipe(gulp.dest(config.build))
+        .pipe(bs.stream());
 };
 
 // Running ESLint with default ruleset
