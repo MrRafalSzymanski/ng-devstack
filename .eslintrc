@@ -10,10 +10,11 @@
         "indent": [0,"tab"],
         "quotes": [2,"single"],
         "linebreak-style": [2,"unix"],
-        "semi": [2,"always"]
+        "semi": [2,"always"],
+        //This rule should be enabled during development (set to 1 to make it throw a warning, set to 2 to throw an error)
+        "no-unused-vars": 0
     },
     "env": {
         "browser": true
     }
-    //"extends": "angular"
 }
