@@ -1,8 +1,12 @@
-# ng-devstack v0.3.4
+# ng-devstack-plus v0.3.4
 
 #### Everything a front-end developer needs to simplify building AngularJS applications.
 
-## Why ng-devstack?
+## Why ng-devstack-plus?
+
+This is a fork of ng-devstack project aimed at exchanging some components with alternative ones (for example JSHint with ESLint) and rewriting the code to meet John Papa's Angular Style Guide compliance.
+
+Original ng-devstack description:
 
 This project has been inspired by another great concept [ngBoilerplate](http://joshdmiller.github.io/ng-boilerplate/), allowing to create modern web applications in [AngularJS](http://angularjs.org/). It follows all the best practices introduced in ngBoilerplate such as component/feature-oriented directory structure, intelligent build system, etc. However, I decided to improve it a little bit and create my own boilerplate from scratch since I missed some basic features like:
 
@@ -28,7 +32,7 @@ Please welcome **ng-devstack**!
 - pre-minifying AngularJS files to fix AngularJS' dependency injection upon minification,
 - support for SASS (including Twitter Bootstrap [official SASS port](http://getbootstrap.com/css/#sass)),
 - support for SASS source maps,
-- support for JSHint,
+- support for ESLint,
 - support for CSS [Autoprefixer](http://github.com/postcss/autoprefixer-core),
 - JS/CSS/HTML minification,
 - remove redundancies (`console.log()`, multiple occurrences of `'use strict'` statement, etc.) from compiled JS code,
