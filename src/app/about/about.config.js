@@ -6,7 +6,7 @@ angular.module('ngDevstack.about')
     $stateProvider.state('about', {
         url: '/about/',
         views: {
-            "main": {
+            'main': {
                 controller: 'AboutController',
                 templateUrl: 'about/about.tpl.html'
             }

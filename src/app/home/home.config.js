@@ -6,7 +6,7 @@ angular.module('ngDevstack.home')
     $stateProvider.state('home', {
         url: '/',
         views: {
-            "main": {
+            'main': {
                 controller: 'HomeController',
                 templateUrl: 'home/home.tpl.html'
             }
