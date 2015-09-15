@@ -1,8 +1,7 @@
-'use strict';
-
 angular.module('ngDevstack')
 
 .config(function ($urlRouterProvider) {
+    'use strict';
 
     $urlRouterProvider.otherwise('/');
     // Please enable mod rewrite in server.js when html5Mode is enabled.
