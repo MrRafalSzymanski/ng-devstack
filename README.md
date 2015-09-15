@@ -32,7 +32,8 @@ Please welcome **ng-devstack**!
 - pre-minifying AngularJS files to fix AngularJS' dependency injection upon minification,
 - support for SASS (including Twitter Bootstrap [official SASS port](http://getbootstrap.com/css/#sass)),
 - support for SASS source maps,
-- support for [ESLint](https://github.com/eslint/eslint),
+- support for [ESLint](https://github.com/eslint/eslint)
+- ESlint verification based on [recommended rules](http://eslint.org/docs/rules/) and extra rules for [AngularJS](https://github.com/Gillespie59/eslint-plugin-angular)
 - support for CSS [Autoprefixer](http://github.com/postcss/autoprefixer-core),
 - JS/CSS/HTML minification,
 - remove redundancies (`console.log()`, multiple occurrences of `'use strict'` statement, etc.) from compiled JS code,
