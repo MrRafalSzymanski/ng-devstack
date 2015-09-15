@@ -1,8 +1,7 @@
-'use strict';
-
 angular.module('ngDevstack')
 
 .controller('AppController', function ($rootScope, $scope) {
+    'use strict';
 
     // handling UI Bootstrap Collapse plugin
     $scope.isCollapsed = true;
