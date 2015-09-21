@@ -139,10 +139,8 @@ gulp.task('scripts:cacheTpls', function () {
 // Check Javascript quality with ESLint
 var fnESLint = function(path) {
     return gulp.src(path, { base: config.app })
-        .pipe(plugins.plumber())
         .pipe(eslint())
         .pipe(eslint.format())
-        .pipe(eslint.failOnError())
         .pipe(gulp.dest(config.build))
         .pipe(bs.stream());
 };
@@ -151,8 +149,6 @@ var fnESLint = function(path) {
 gulp.task('scripts:lint', function () {
     return fnESLint(config.paths.scripts);
 });
-
-
 
 
 // Prepare assets
