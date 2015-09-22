@@ -1,8 +1,6 @@
 angular.module('ngDevstack.home')
 
 .config(function ($stateProvider) {
-    'use strict';
-
     $stateProvider.state('home', {
         url: '/',
         views: {

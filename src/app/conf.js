@@ -1,5 +1,3 @@
-'use strict';
-
 angular.module('ngDevstack.conf', [])
 
 .constant('conf', {

@@ -1,8 +1,6 @@
 angular.module('ngDevstack.about')
 
 .config(function ($stateProvider) {
-    'use strict';
-
     $stateProvider.state('about', {
         url: '/about/',
         views: {
