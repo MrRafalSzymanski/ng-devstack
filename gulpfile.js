@@ -140,10 +140,7 @@ gulp.task('scripts:cacheTpls', function () {
 // Check Javascript quality with ESLint
 var fnESLint = function(path) {
     return gulp.src(path, { base: config.app })
-<<<<<<< HEAD
         .pipe(wrap('(function(){\n"use strict";\n<%= contents %>\n})();'))
-=======
->>>>>>> origin/master
         .pipe(eslint())
         .pipe(eslint.format())
         .pipe(gulp.dest(config.build))
