@@ -1,8 +1,8 @@
 <!doctype html>
-<html ng-app="ngDevstack" ng-controller="AppController">
+<html ng-app="ngDevstack" ng-controller="AppController as app">
 <head>
     <meta charset="UTF-8">
-    <title ng-bind="pageTitle"></title>
+    <title ng-bind="app.pageTitle"></title>
 
     <!-- build:css assets/vendor.min.css -->
     <!-- bower:css -->
@@ -24,14 +24,14 @@
                     <div class="container-fluid">
 
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" ng-click="isCollapsed = !isCollapsed">
+                            <button type="button" class="navbar-toggle" ng-click="app.isCollapsed = !app.isCollapsed">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
                         </div>
 
-                        <div class="collapse navbar-collapse" collapse="isCollapsed">
+                        <div class="collapse navbar-collapse" collapse="app.isCollapsed">
                             <ul class="nav navbar-nav">
                                 <li ui-sref-active="active"><a ui-sref="home">Home</a></li>
                                 <li ui-sref-active="active"><a ui-sref="about">About</a></li>
