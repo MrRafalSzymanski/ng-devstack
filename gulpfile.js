@@ -9,7 +9,8 @@ var gulp     = require('gulp'),
     bs       = require('browser-sync').create(),
     config   = require('./config.json'),
     pkg      = require('./package.json'),
-    eslint   = require('gulp-eslint');
+    eslint   = require('gulp-eslint'),
+    wrap     = require('gulp-wrap');
 
 
 
@@ -139,6 +140,7 @@ gulp.task('scripts:cacheTpls', function () {
 // Check Javascript quality with ESLint
 var fnESLint = function(path) {
     return gulp.src(path, { base: config.app })
+        .pipe(wrap('(function(){\n"use strict";\n<%= contents %>\n})();'))
         .pipe(eslint())
         .pipe(eslint.format())
         .pipe(gulp.dest(config.build))
@@ -149,8 +151,6 @@ var fnESLint = function(path) {
 gulp.task('scripts:lint', function () {
     return fnESLint(config.paths.scripts);
 });
-
-
 
 
 // Prepare assets
