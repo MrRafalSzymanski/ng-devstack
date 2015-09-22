@@ -83,7 +83,7 @@ rules:
   no-with: 2 #disallow use of the with statement
   radix: 2 #require use of the second argument for parseInt()
   vars-on-top: 0 #requires to declare all vars on top of their containing scope
-  wrap-iife: 2 #require immediate function invocation to be wrapped in parentheses
+  wrap-iife: [2, "any"] #require immediate function invocation to be wrapped in parentheses
   yoda: 2 #require or disallow Yoda conditions
   
   #Strict Mode
